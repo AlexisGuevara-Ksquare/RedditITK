@@ -5,8 +5,11 @@
   "main": "index.js",
   "scripts": {
     "dev": "ts-node-dev ./src/index.ts",
+    "DB": "npx sequelize-cli db:create",
+    "migrate": "npx sequelize-cli db:migrate",
+    "undoMigrate": "npx sequelize-cli db:migrate:undo",
     "seed": "npx sequelize-cli db:seed:all",
-    "revertSeed": "npx sequelize-cli db:seed:undo:all"
+    "undoSeed": "npx sequelize-cli db:seed:undo:all"
   },
   "keywords": [],
   "author": "",
